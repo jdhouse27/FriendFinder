@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friends Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">    
+            <h1><i class="fab fa-facebook-square fa-fw"></i>Survey Questions</h1>
+            <hr>
+            <h2>About You</h2>
+            <form method="POST" role="form">
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" class="form-control" id="name" placeholder="name" style="width: 500px">
+                </div>
+                <div class="form-group">
+                    <label for="name">Link to Photo Image (Required)</label>
+                    <input type="text" class="form-control" id="photo" placeholder="photo link" style="width: 500px">
+                </div>
+                <hr>
+                <div class="form-group">
+                    <h2>Question 1</h2>
+                    <label for="name">Do you like dogs?</label>
+                    <select class="form-control" id="question1" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 2</h2>
+                    <label for="name">Do you like cats?</label>
+                    <select class="form-control" id="question2" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 3</h2>
+                    <label for="name">Do you like warm weather?</label>
+                    <select class="form-control" id="question3" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 4</h2>
+                    <label for="name">Do you like the mountains?</label>
+                    <select class="form-control" id="question4" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 5</h2>
+                    <label for="name">Do you like professional sports?</label>
+                    <select class="form-control" id="question5" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 6</h2>
+                    <label for="name">Do you drink alcohol?</label>
+                    <select class="form-control" id="question6" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 7</h2>
+                    <label for="name">Do you like to travel?</label>
+                    <select class="form-control" id="question7" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 8</h2>
+                    <label for="name">Do you like the outdoors?</label>
+                    <select class="form-control" id="question8" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 9</h2>
+                    <label for="name">Do you like music?</label>
+                    <select class="form-control" id="question9" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h2>Question 10</h2>
+                    <label for="name">Are you a morning person?</label>
+                    <select class="form-control" id="question10" style="width: 200px">
+                        <option disabled selected hidden>Select an Option</option>
+                        <option>1 (Strongly Disagree) </option>
+                        <option>2 </option>
+                        <option>3 (Neutral) </option>
+                        <option>4 </option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <div class="text-left">
+                <button type="submit" class="btn btn-primary btn-md" id="add-btn" style="width: 100%">
+                    <span class="fas fa-check-circle fa-fw"></span>Submit</button>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>
