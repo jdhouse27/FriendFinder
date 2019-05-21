@@ -183,21 +183,23 @@
   </div>
 
   <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
+  <div id="results-modal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button class="close" data-dismiss="modal">&times;</button>
           <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
           <img id="match-img" src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjTstDm1qviAhXFhOAKHdRYDjsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.akc.org%2Fdog-breeds%2Fbulldog%2F&psig=AOvVaw0wP2Rukq6zq3zc7qvfkNU4&ust=1558495601416888" alt="">
         </div>
         <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
 
@@ -240,9 +242,9 @@
         };
         $.post("/api/friends", userData)
          .then(function(data) {
-
-          $("#match-name").text(userData.name);
-          $("#match-img").attr("src", userData.photo);
+          console.log(data);
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
           $("#results-modal").modal("toggle");
 
         });

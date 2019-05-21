@@ -18,7 +18,7 @@ module.exports = function(app){
       
       let userData = req.body;
       let userScores = userData.scores;
-      let totalDifference = [];
+      let totalDifference;
   
       for (let i = 0; i < friends.length; i++) {
         let currentFriend = friends[i];
@@ -32,7 +32,7 @@ module.exports = function(app){
 
               totalDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
               
-                console.log(Math.max(totalDifference));
+                console.log(totalDifference);
               
             }
   
