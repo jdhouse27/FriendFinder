@@ -2,7 +2,7 @@ let friends = [
 
 {
     name: "Brandon",
-    photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjngojnhp_iAhUPnq0KHV-qBgQQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChallenger_2&psig=AOvVaw18lkJuuZ7GopwoTMN4jZYT&ust=1558061831666132",
+    photo: "https://drive.google.com/file/d/18HVG-PnBh9Cp-2nz4J_ZcuiDbTaMdXQ-/view?usp=sharing",
     scores: [
         "5",
         "4",
@@ -18,7 +18,7 @@ let friends = [
 },
 {
     name: "Ryan",
-    photo: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjinNPVh5_iAhXMmq0KHTztC6wQjRx6BAgBEAU&url=https%3A%2F%2Fpixabay.com%2Fphotos%2Fsearch%2Flion%2F&psig=AOvVaw0_Np-8f04DQGNqe3dNclVY&ust=1558062071745325",
+    photo: "https://drive.google.com/file/d/1VbWb18ukoHZTbfyLkmDjZmW1GGO0sa3P/view?usp=sharing",
     scores: [
         "4",
         "5",
@@ -34,7 +34,7 @@ let friends = [
 },
 {
     name: "Mike",
-    photo: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiBhsSAiJ_iAhUGnKwKHZKgCn8QjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKansas_Jayhawks&psig=AOvVaw2Hqr7yluE8jJg9nl-V93d-&ust=1558062163382286",
+    photo: "https://drive.google.com/file/d/18ivfY9ZIUclVPo-BYehLbw6edltUU6Fb/view?usp=sharing",
     scores: [
         "4",
         "2",

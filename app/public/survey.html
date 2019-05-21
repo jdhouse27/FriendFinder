@@ -28,15 +28,15 @@
                     <div class="invalid-feedback">Please enter your name.</div>
                 </div>
                 <div class="form-group">
-                    <label for="name">Link to Photo Image (Required)</label>
+                    <label for="photo">Link to Photo Image (Required)</label>
                     <input type="text" class="form-control" id="photo" placeholder="photo link" style="width: 500px" required>
                     <div class="invalid-feedback">Please enter your photo.</div>
                  </div>
                 <hr>
                 <div class="form-group">
                     <h2>Question 1</h2>
-                    <label for="name">Do you like dogs?</label>
-                    <select class="form-control" id="q1" style="width: 200px" required>
+                    <label for="question1">Do you like dogs?</label>
+                    <select class="form-control" id="question1" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -48,8 +48,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 2</h2>
-                    <label for="name">Do you like cats?</label>
-                    <select class="form-control" id="q2" style="width: 200px" required>
+                    <label for="question2">Do you like cats?</label>
+                    <select class="form-control" id="question2" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -61,8 +61,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 3</h2>
-                    <label for="name">Do you drink Coffee?</label>
-                    <select class="form-control" id="q3" style="width: 200px" required>
+                    <label for="question3">Do you drink Coffee?</label>
+                    <select class="form-control" id="question3" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -74,8 +74,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 4</h2>
-                    <label for="name">Do you like the mountains?</label>
-                    <select class="form-control" id="q4" style="width: 200px" required>
+                    <label for="question4">Do you like the mountains?</label>
+                    <select class="form-control" id="question4" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -87,8 +87,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 5</h2>
-                    <label for="name">Do you like professional sports?</label>
-                    <select class="form-control" id="q5" style="width: 200px" required>
+                    <label for="question5">Do you like professional sports?</label>
+                    <select class="form-control" id="question5" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -100,8 +100,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 6</h2>
-                    <label for="name">Do you drink alcohol?</label>
-                    <select class="form-control" id="q6" style="width: 200px" required>
+                    <label for="question6">Do you drink alcohol?</label>
+                    <select class="form-control" id="question6" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -113,8 +113,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 7</h2>
-                    <label for="name">Do you like to travel?</label>
-                    <select class="form-control" id="q7" style="width: 200px" required>
+                    <label for="question7">Do you like to travel?</label>
+                    <select class="form-control" id="question7" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -126,8 +126,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 8</h2>
-                    <label for="name">Do you like the outdoors?</label>
-                    <select class="form-control" id="q8" style="width: 200px" required>
+                    <label for="question8">Do you like the outdoors?</label>
+                    <select class="form-control" id="question8" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -139,8 +139,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 9</h2>
-                    <label for="name">Do you like music?</label>
-                    <select class="form-control" id="q9" style="width: 200px" required>
+                    <label for="question9">Do you like music?</label>
+                    <select class="form-control" id="question9" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -152,8 +152,8 @@
                 </div>
                 <div class="form-group">
                     <h2>Question 10</h2>
-                    <label for="name">Are you a morning person?</label>
-                    <select class="form-control" id="q10" style="width: 200px" required>
+                    <label for="question10">Are you a morning person?</label>
+                    <select class="form-control" id="question10" style="width: 200px" required>
                         <option disabled selected hidden>Select an Option</option>
                         <option>1 (Strongly Disagree) </option>
                         <option>2 </option>
@@ -206,33 +206,47 @@
 
   <script type="text/javascript">
 
-    $("#add-btn").on("click", function(event) {
-      event.preventDefault();
-      
-        let userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()]
-        };
+  $("#add-btn").on("click", function (event) {
+    event.preventDefault();
 
+    function validateForm() {
+      let isValid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        return isValid;
+      }
+
+
+    if (validateForm()) {
+        let userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              parseInt($("#question1").val()),
+              parseInt($("#question2").val()),
+              parseInt($("#question3").val()),
+              parseInt($("#question4").val()),
+              parseInt($("#question5").val()),
+              parseInt($("#question6").val()),
+              parseInt($("#question7").val()),
+              parseInt($("#question8").val()),
+              parseInt($("#question9").val()),
+              parseInt($("#question10").val())                    
+              ]
+        };
         $.post("/api/friends", userData)
          .then(function(data) {
 
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+          $("#match-name").text(userData.name);
+          $("#match-img").attr("src", userData.photo);
           $("#results-modal").modal("toggle");
 
         });
+      } 
     });
   </script>
   
