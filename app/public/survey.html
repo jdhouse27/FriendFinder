@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -194,7 +194,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjTstDm1qviAhXFhOAKHdRYDjsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.akc.org%2Fdog-breeds%2Fbulldog%2F&psig=AOvVaw0wP2Rukq6zq3zc7qvfkNU4&ust=1558495601416888" alt="">
         </div>
         <div class="modal-footer">
           <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -205,7 +205,8 @@
   </div>
 
   <script type="text/javascript">
-    $("#submit").on("click", function(event) {
+
+    $("#add-btn").on("click", function(event) {
       event.preventDefault();
       
         let userData = {
@@ -225,7 +226,8 @@
           ]
         };
 
-        $.post("/api/friends", userData, function(data) {
+        $.post("/api/friends.js", userData)
+         .then(function(data) {
 
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
