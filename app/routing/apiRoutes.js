@@ -9,7 +9,7 @@ module.exports = function(app){
   app.post("/api/friends", function(req, res) {
       // req.body hosts is equal to the JSON post sent from the user
       // This works because of our body parsing middleware
-      let match = {
+      let bestMatch = {
         name: "",
         photo: "",
         friendDifference: 100
@@ -20,11 +20,11 @@ module.exports = function(app){
       let userScores = userData.scores;
       let totalDifference;
   
-      for (var i = 0; i < friends.length; i++) {
+      for (let i = 0; i < friends.length; i++) {
         let currentFriend = friends[i];
         totalDifference = 0;
   
-       for (var j = 0; j < currentFriend.scores.length; j++) {
+       for (let j = 0; j < currentFriend.scores.length; j++) {
           let currentFriendScore = currentFriend.scores[j];
           let currentUserScore = userScores[j];
   
