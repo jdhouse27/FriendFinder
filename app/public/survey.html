@@ -222,11 +222,10 @@
             $("#q7").val(),
             $("#q8").val(),
             $("#q9").val(),
-            $("#q10").val()
-          ]
+            $("#q10").val()]
         };
 
-        $.post("/api/friends.js", userData)
+        $.post("/api/friends", userData)
          .then(function(data) {
 
           $("#match-name").text(data.name);
