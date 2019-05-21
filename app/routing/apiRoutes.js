@@ -31,7 +31,7 @@ module.exports = function(app){
             let currentUserScore = userScores[j];
 
               totalDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
-
+              
                 console.log(Math.max(totalDifference));
               
             }
